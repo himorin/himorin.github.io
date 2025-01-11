@@ -6,6 +6,9 @@ function FindProxyForURL(url, host) {
 
     if (shExpMatch(host, "*.ksw.himor.in")) {return proxy_cvps; }
     if (shExpMatch(host, "ksw.himor.in")) {return proxy_cvps; }
+    if (shExpMatch(host, "*.w3c.himor.in")) {return proxy_cvps; }
+    if (shExpMatch(host, "w3c.himor.in")) {return proxy_cvps; }
+    if (shExpMatch(host, "*.kyoto3d.net")) {return proxy_cvps; }
 
 // AD
 //    if (shExpMatch(host, "")) {return proxy_ad; }
@@ -14,8 +17,8 @@ function FindProxyForURL(url, host) {
     if (shExpMatch(host, "d-cache.microad.jp")) {return proxy_ad; }
     if (shExpMatch(host, "cdn.apvdr.com")) {return proxy_ad; }
     if (shExpMatch(host, "*.teads.tv")) {return proxy_ad; }
-    if (shExpMatch(host, "cm.g.doubleclick.net")) {return proxy_ad; }
-    if (shExpMatch(host, "ad.doubleclick.net")) {return proxy_ad; }
+    if (shExpMatch(host, "*.doubleclick.net")) {return proxy_ad; }
+    if (shExpMatch(host, "*.g.doubleclick.net")) {return proxy_ad; }
     if (shExpMatch(host, "*.criteo.com")) {return proxy_ad; }
     if (shExpMatch(host, "*.criteo.net")) {return proxy_ad; }
     if (shExpMatch(host, "*.adnxs.com")) {return proxy_ad; }
@@ -29,7 +32,6 @@ function FindProxyForURL(url, host) {
     if (shExpMatch(host, "*.impact-ad.jp")) {return proxy_ad; }
     if (shExpMatch(host, "*.im-apps.net")) {return proxy_ad; }
     if (shExpMatch(host, "*.gssprt.jp")) {return proxy_ad; }
-    if (shExpMatch(host, "*.g.doubleclick.net")) {return proxy_ad; }
     if (shExpMatch(host, "*.amazon-adsystem.com")) {return proxy_ad; }
     if (shExpMatch(host, "*.adingo.jp")) {return proxy_ad; }
     if (shExpMatch(host, "yads.c.yimg.jp")) {return proxy_ad; }                 
@@ -41,6 +43,8 @@ function FindProxyForURL(url, host) {
     if (shExpMatch(host, "*.ads-twitter.net")) {return proxy_ad; }              
     if (shExpMatch(host, "*.ads-twitter.com")) {return proxy_ad; }              
     if (shExpMatch(host, "*.amanad.adtdp.com")) {return proxy_ad; }             
+    if (shExpMatch(host, "sp.gmossp-sp.jp")) {return proxy_ad; }                
+    if (shExpMatch(host, "*.karte.io")) {return proxy_ad; }                     
 
     return proxy_no;
 }

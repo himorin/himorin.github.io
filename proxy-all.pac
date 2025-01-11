@@ -59,5 +59,5 @@ function FindProxyForURL(url, host) {
     if (shExpMatch(host, "*.github.io")) {return proxy_no; }
     if (shExpMatch(host, "*.twitter.com")) {return proxy_no; }
 
-    return proxy_no;
+    return proxy_cvps;
 }
