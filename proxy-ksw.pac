@@ -9,6 +9,8 @@ function FindProxyForURL(url, host) {
     if (shExpMatch(host, "*.w3c.himor.in")) {return proxy_cvps; }
     if (shExpMatch(host, "w3c.himor.in")) {return proxy_cvps; }
     if (shExpMatch(host, "*.kyoto3d.net")) {return proxy_cvps; }
+    if (shExpMatch(host, "archive.vietfes.asia")) {return proxy_cvps; }
+    if (shExpMatch(host, "*.archive.himor.in")) {return proxy_cvps; }
 
 // AD
 //    if (shExpMatch(host, "")) {return proxy_ad; }
@@ -34,17 +36,47 @@ function FindProxyForURL(url, host) {
     if (shExpMatch(host, "*.gssprt.jp")) {return proxy_ad; }
     if (shExpMatch(host, "*.amazon-adsystem.com")) {return proxy_ad; }
     if (shExpMatch(host, "*.adingo.jp")) {return proxy_ad; }
-    if (shExpMatch(host, "yads.c.yimg.jp")) {return proxy_ad; }                 
-    if (shExpMatch(host, "dsb.yahoo.co.jp")) {return proxy_ad; }                
-    if (shExpMatch(host, "nkispa.nikkei.com")) {return proxy_ad; }              
-    if (shExpMatch(host, "ads.rubiconproject.com")) {return proxy_ad; }         
-    if (shExpMatch(host, "smarttag.rubiconproject.com")) {return proxy_ad; }    
-    if (shExpMatch(host, "pixon.ads-pixiv.net")) {return proxy_ad; }            
-    if (shExpMatch(host, "*.ads-twitter.net")) {return proxy_ad; }              
-    if (shExpMatch(host, "*.ads-twitter.com")) {return proxy_ad; }              
-    if (shExpMatch(host, "*.amanad.adtdp.com")) {return proxy_ad; }             
-    if (shExpMatch(host, "sp.gmossp-sp.jp")) {return proxy_ad; }                
-    if (shExpMatch(host, "*.karte.io")) {return proxy_ad; }                     
+    if (shExpMatch(host, "yads.c.yimg.jp")) {return proxy_ad; }
+    if (shExpMatch(host, "dsb.yahoo.co.jp")) {return proxy_ad; }
+    if (shExpMatch(host, "nkispa.nikkei.com")) {return proxy_ad; }
+    if (shExpMatch(host, "ads.rubiconproject.com")) {return proxy_ad; }
+    if (shExpMatch(host, "smarttag.rubiconproject.com")) {return proxy_ad; }
+    if (shExpMatch(host, "pixon.ads-pixiv.net")) {return proxy_ad; }
+    if (shExpMatch(host, "*.ads-twitter.net")) {return proxy_ad; }
+    if (shExpMatch(host, "*.ads-twitter.com")) {return proxy_ad; }
+    if (shExpMatch(host, "*.amanad.adtdp.com")) {return proxy_ad; }
+    if (shExpMatch(host, "sp.gmossp-sp.jp")) {return proxy_ad; }
+    if (shExpMatch(host, "*.karte.io")) {return proxy_ad; }
+    if (shExpMatch(host, "*.clarity.ms")) {return proxy_ad; }
+    if (shExpMatch(host, "*.outbrain.com")) {return proxy_ad; }
+    if (shExpMatch(host, "*.cccmh.jp")) {return proxy_ad; }
+    if (shExpMatch(host, "*.html-load.com")) {return proxy_ad; }
+    if (shExpMatch(host, "*.nakanohito.jp")) {return proxy_ad; }
+    if (shExpMatch(host, "*.adpushup.com")) {return proxy_ad; }
+    if (shExpMatch(host, "*.caprofitx.com")) {return proxy_ad; }
+    if (shExpMatch(host, "*.impactify.media")) {return proxy_ad; }
+    if (shExpMatch(host, "*.ladsp.com")) {return proxy_ad; }
+    if (shExpMatch(host, "*.creativecdn.com")) {return proxy_ad; }
+    if (shExpMatch(host, "*.socdm.com")) {return proxy_ad; }
+
+// h3
+//    if (shExpMatch(host, "")) {return proxy_no; }
+    if (shExpMatch(host, "*.youtube.com")) {return proxy_no; }
+    if (shExpMatch(host, "*.google.com")) {return proxy_no; }
+    if (shExpMatch(host, "*.googleapis.com")) {return proxy_no; }
+    if (shExpMatch(host, "*.gstatic.com")) {return proxy_no; }
+    if (shExpMatch(host, "*.ytimg.com")) {return proxy_no; }
+    if (shExpMatch(host, "*.ggpht.com")) {return proxy_no; }
+    if (shExpMatch(host, "*.google.co.jp")) {return proxy_no; }
+    if (shExpMatch(host, "*.googleusercontent.com")) {return proxy_no; }
+    if (shExpMatch(host, "*.googlevideo.com")) {return proxy_no; }
+    if (shExpMatch(host, "*.googlesyndication.com")) {return proxy_no; }
+    if (shExpMatch(host, "*.facebook.com")) {return proxy_no; }
+    if (shExpMatch(host, "*.fbcdn.net")) {return proxy_no; }
+    if (shExpMatch(host, "cc3001.dmm.co.jp")) {return proxy_no; }
+    if (shExpMatch(host, "*.google-analytics.com")) {return proxy_no; }
+    if (shExpMatch(host, "*.github.io")) {return proxy_no; }
+    if (shExpMatch(host, "*.twitter.com")) {return proxy_no; }
 
     return proxy_no;
 }

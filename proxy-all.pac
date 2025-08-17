@@ -28,17 +28,28 @@ function FindProxyForURL(url, host) {
     if (shExpMatch(host, "*.gssprt.jp")) {return proxy_ad; }
     if (shExpMatch(host, "*.amazon-adsystem.com")) {return proxy_ad; }
     if (shExpMatch(host, "*.adingo.jp")) {return proxy_ad; }
-    if (shExpMatch(host, "yads.c.yimg.jp")) {return proxy_ad; }            
-    if (shExpMatch(host, "dsb.yahoo.co.jp")) {return proxy_ad; }           
-    if (shExpMatch(host, "nkispa.nikkei.com")) {return proxy_ad; }         
-    if (shExpMatch(host, "ads.rubiconproject.com")) {return proxy_ad; }    
+    if (shExpMatch(host, "yads.c.yimg.jp")) {return proxy_ad; }
+    if (shExpMatch(host, "dsb.yahoo.co.jp")) {return proxy_ad; }
+    if (shExpMatch(host, "nkispa.nikkei.com")) {return proxy_ad; }
+    if (shExpMatch(host, "ads.rubiconproject.com")) {return proxy_ad; }
     if (shExpMatch(host, "smarttag.rubiconproject.com")) {return proxy_ad; }
-    if (shExpMatch(host, "pixon.ads-pixiv.net")) {return proxy_ad; }       
-    if (shExpMatch(host, "*.ads-twitter.net")) {return proxy_ad; }         
-    if (shExpMatch(host, "*.ads-twitter.com")) {return proxy_ad; }         
-    if (shExpMatch(host, "*.amanad.adtdp.com")) {return proxy_ad; }        
-    if (shExpMatch(host, "sp.gmossp-sp.jp")) {return proxy_ad; }           
-    if (shExpMatch(host, "*.karte.io")) {return proxy_ad; }                
+    if (shExpMatch(host, "pixon.ads-pixiv.net")) {return proxy_ad; }
+    if (shExpMatch(host, "*.ads-twitter.net")) {return proxy_ad; }
+    if (shExpMatch(host, "*.ads-twitter.com")) {return proxy_ad; }
+    if (shExpMatch(host, "*.amanad.adtdp.com")) {return proxy_ad; }
+    if (shExpMatch(host, "sp.gmossp-sp.jp")) {return proxy_ad; }
+    if (shExpMatch(host, "*.karte.io")) {return proxy_ad; }
+    if (shExpMatch(host, "*.clarity.ms")) {return proxy_ad; }
+    if (shExpMatch(host, "*.outbrain.com")) {return proxy_ad; }
+    if (shExpMatch(host, "*.cccmh.jp")) {return proxy_ad; }
+    if (shExpMatch(host, "*.html-load.com")) {return proxy_ad; }
+    if (shExpMatch(host, "*.nakanohito.jp")) {return proxy_ad; }
+    if (shExpMatch(host, "*.adpushup.com")) {return proxy_ad; }
+    if (shExpMatch(host, "*.caprofitx.com")) {return proxy_ad; }
+    if (shExpMatch(host, "*.impactify.media")) {return proxy_ad; }
+    if (shExpMatch(host, "*.ladsp.com")) {return proxy_ad; }
+    if (shExpMatch(host, "*.creativecdn.com")) {return proxy_ad; }
+    if (shExpMatch(host, "*.socdm.com")) {return proxy_ad; }
 
 // h3
 //    if (shExpMatch(host, "")) {return proxy_no; }
