@@ -49,7 +49,7 @@ function FindProxyForURL(url, host) {
     if (shExpMatch(host, "*.karte.io")) {return proxy_ad; }
     if (shExpMatch(host, "*.clarity.ms")) {return proxy_ad; }
     if (shExpMatch(host, "*.outbrain.com")) {return proxy_ad; }
-    if (shExpMatch(host, "*.cccmh.jp")) {return proxy_ad; }
+//    if (shExpMatch(host, "*.cccmh.jp")) {return proxy_ad; }
     if (shExpMatch(host, "*.html-load.com")) {return proxy_ad; }
     if (shExpMatch(host, "*.nakanohito.jp")) {return proxy_ad; }
     if (shExpMatch(host, "*.adpushup.com")) {return proxy_ad; }
@@ -58,6 +58,10 @@ function FindProxyForURL(url, host) {
     if (shExpMatch(host, "*.ladsp.com")) {return proxy_ad; }
     if (shExpMatch(host, "*.creativecdn.com")) {return proxy_ad; }
     if (shExpMatch(host, "*.socdm.com")) {return proxy_ad; }
+    if (shExpMatch(host, "*.error-report.com")) {return proxy_ad; }
+    if (shExpMatch(host, "*.tally.so")) {return proxy_ad; }
+    if (shExpMatch(host, "*.stickyadstv.com")) {return proxy_ad; }
+    if (shExpMatch(host, "*.robee.tech")) {return proxy_ad; }
 
 // h3
 //    if (shExpMatch(host, "")) {return proxy_no; }
