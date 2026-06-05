@@ -29,13 +29,16 @@ img.qr {
   margin-block-start: 0.5rem;
   margin-block-end: 0.5rem;
 }
-.box div {
+.box div::after {
+  content: "";
+  display: table;
   clear: both;
 }
 @media (min-width: 700px) {
   div.boxes {
     display: flex;
     flex-flow: row wrap;
+    margin: 0 auto;
   }
   div.box {
     width: 30rem;
@@ -47,7 +50,7 @@ img.qr {
 }
 @media (max-width: 700px) {
   div.box {
-    width: 90vw;
+    width: 85vw;
     margin: 1rem auto;
   }
   img.qr {
