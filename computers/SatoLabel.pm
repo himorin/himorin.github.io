@@ -40,6 +40,14 @@ sub print_ascii {
   $op .= SLP_ESC . "P00";
   $op .= SLP_ESC . "L" . sprintf("%02d%02d", $ph, $pv);
   $op .= SLP_ESC . $font;
+  $op .= $str;
+}
+sub print_xfont {
+  my ($self, $v, $h, $ph, $pv, $font, $str) = @_;
+  $self->_print_pos($v, $h);
+  $op .= SLP_ESC . "P00";
+  $op .= SLP_ESC . "L" . sprintf("%02d%02d", $ph, $pv);
+  $op .= SLP_ESC . "X" . sprintf("%02d", $font);
   $op .= ',' . $str;
 }
 sub print_mbtext {
