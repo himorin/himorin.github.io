@@ -16,7 +16,7 @@ close(INDAT);
 $params = decode_json($config_text);
 
 $o_spl->init_page(256, 392, "shiftjis");
-$o_spl->print_ascii(25,225, 1, 1, "M", "surface7b")
+$o_spl->print_ascii(25,225, 1, 1, "M", "surface7b");
 $o_spl->print_qr(110, 465, "Q", 3, 'https://himor.in/computers/?surface7b');
 $o_spl->finish_page(1);
 
