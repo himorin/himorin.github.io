@@ -37,8 +37,8 @@ for my $key (keys(%$params)) {
   $o_spl->print_ascii(70, 240, 1, 1, "M", $cprm->{'cpu'});
   $cstr = "Mem " . $cprm->{'mem'} . "GB / SSD " . $cprm->{'ssd'} . "GB";
   $o_spl->print_ascii(95, 240, 1, 1, "M", $cstr);
-  if (defined($items->{$cprm->{'type'}})) {
-    $cstr = $items->{$cprm->{'type'}};
+  if (defined($items->{'surfacetype'}->{$cprm->{'type'}})) {
+    $cstr = $items->{'surfacetype'}->{$cprm->{'type'}};
   } else {
     $cstr = $cprm->{'type'};
   }
