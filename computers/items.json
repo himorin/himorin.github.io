@@ -1,11 +1,15 @@
 {
   "surfacetype": {
+    "n3": "Surface 3",
     "p3": "Surface Pro 3",
     "p4": "Surface Pro 4",
     "p5": "Surface Pro 5",
     "p6": "Surface Pro 6",
     "p7": "Surface Pro 7",
     "p7+": "Surface Pro 7+",
-    "p8": "Surface Pro 8"
+    "p8": "Surface Pro 8",
+    "go": "Surface Go",
+    "go2": "Surface Go 2",
+    "go3": "Surface Go 3"
   }
 }

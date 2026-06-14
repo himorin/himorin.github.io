@@ -17,4 +17,19 @@
       "2026-02-12": "利用開始, 512GB SSD入れた"
     }
   }
+  ,"suefaceg2a": {
+    "cpu": "Core m3-8100Y 1.10",
+    "mem": "4",
+    "ssd": "64",
+    "type": "go2",
+    "id": "024869601751",
+    "os": "Win11 Pro",
+    "account": "atsushi",
+    "setup": "mtg",
+    "hardware": [],
+    "software": [],
+    "comments": {
+      "2026-06-11": "Win11リカバリーSDから再セットアップ、利用開始"
+    }
+  }
 }
