@@ -54,7 +54,8 @@ for my $key (keys(%$params)) {
       $cstr = '';
       $clid++;
     } else {
-      $cstr .= ', ' . $ci;
+      if ($cstr ne '') { $cstr .= ', '; }
+      $cstr .= $ci;
     }
     if ($clid > 1) { last; }
   }
