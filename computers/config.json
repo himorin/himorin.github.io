@@ -1,18 +1,19 @@
 {
   "surface7b": {
-    "cpu": "Ci5-1135G7 2.40",
+    "cpu": "Core i5-1135G7 2.40",
     "mem": "8",
     "ssd": "512",
     "type": "P7+",
     "id": "040718110253",
     "account": "atsushi",
     "setup": "norm",
+    "hardware": [],
     "software": [
       "O365",
       "AdobeCC"
     ],
     "comments": {
-      "2026-02-12": "利用開始"
+      "2026-02-12": "利用開始, 512GB SSD入れた"
     }
   }
 }
