@@ -49,7 +49,7 @@ for my $key (keys(%$params)) {
   $cstr = '';
   $clid = 0;
   foreach my $ci (@{$cprm->{'software'}}) {
-    if (len($cstr) + len($ci) > 18) {
+    if (length($cstr) + length($ci) > 18) {
       $o_spl->print_ascii(200 + $clid * 25, 240, 1, 1, "M", $cstr);
       $cstr = '';
       $clid++;
