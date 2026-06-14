@@ -16,7 +16,7 @@ close(INDAT);
 my $params = decode_json($config_text);
 
 $o_spl->init_page(256, 392, "shiftjis");
-$o_spl->print_xascii(25, 225, 1, 1, 22, "surface7b");
+$o_spl->print_xfont(25, 225, 1, 1, 22, "surface7b");
 $o_spl->print_ascii(60, 230, 1, 1, "M", "Ci5-1135G7 2.40GHz");
 $o_spl->print_ascii(85, 230, 1, 1, "M", "Mem 8G / SSD 512GB");
 $o_spl->print_ascii(110, 230, 1, 1, "M", "Surface Pro 7+ 040718110253");
