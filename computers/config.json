@@ -32,4 +32,20 @@
       "2026-06-11": "Win11リカバリーSDから再セットアップ、利用開始"
     }
   }
+  ,"surfacego2b": {
+    "cpu": "Pen 4425Y 1.70GHz",
+    "mem": "4",
+    "ssd": "64",
+    "type": "go2",
+    "id": "033706204951",
+    "os": "Win11 Pro",
+    "account": "meeting",
+    "setup": "mtg",
+    "hardware": [],
+    "software": [],
+    "comments": {
+      "2026-06-16": "Win11リカバリーSDから再セットアップ",
+      "2026-06-17": "画面側カメラ動作不良"
+    }
+  }
 }
