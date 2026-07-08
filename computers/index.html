@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>作業用ノートPCリスト</title> 
+  <style>
+table {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 0px;
+}
+table, th, td {
+  border: 1px solid #000000;
+  border-collapse: collapse;
+}
+  </style>
+  <script>
+let list_comp;
+let list_item;
+let url_config = 'config.json';
+let url_items = 'items.json';
+
+async function LoadList() {
+  let targets = [ url_config, url_items ];
+  return await Promise.all(targets.map(url => 
+    fetch(url)
+    .then((res) => {
+      if (res.ok) { return res.json(); }
+      else { throw Error('failed to fetch: ' + url); }
+    })
+  ));
+};
+function InsertRows() {
+  let tgt = document.getElementById('list_computers');
+  Object.keys(list_comp).forEach((item) => {
+    let ch = '<tr>';
+    ch += '<td>' + item + '</td>';
+    ch += '<td>' + list_comp[item].type + '</td>';
+    ch += '<td>' + list_comp[item].os + '</td>';
+    ch += '<td>' + list_comp[item].cpu + '</td>';
+    ch += '<td>' + list_comp[item].mem + '</td>';
+    ch += '<td>' + list_comp[item].ssd + '</td>';
+    ch += '<td>' + list_comp[item].account + '</td>';
+    ch += '<td>' + list_comp[item].setup + '</td>';
+    ch += '<td>' + '<a id="detail_' + item + '">詳細</a>' + '</td>';
+    ch += '</tr>';
+    tgt.innerHTML += ch;
+  })
+  Object.keys(list_comp).forEach((item) => {
+    document.getElementById('detail_' + item).addEventListener('click', ShowDetails);
+  });
+}
+function ShowItems() {
+  LoadList()
+  .then((data) => {
+    list_comp = data[0];
+    list_item = data[1];
+    InsertRows();
+  }).catch((err) => { console.log('Load failed: ' + err.message)});
+}
+
+function ShowDetails() {
+}
+
+window.addEventListener('DOMContentLoaded', function() {
+  ShowItems();
+});
+  </script>
+</head>
+<body>
+<h1>ノートPCリスト</h1>
+<table>
+<thead>
+  <tr>
+    <th>ID</th><th>HW</th><th>OS</th><th>CPU</th><th>Memory</th><th>SSD</th><th>アカウント</th><th>設定</th><th></th>
+  </tr>
+</thead>
+<tbody id="list_computers"></tbody>
+</table>
+</body>
+</html>
