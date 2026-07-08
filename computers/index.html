@@ -36,7 +36,7 @@ function InsertRows() {
   Object.keys(list_comp).forEach((item) => {
     let ch = '<tr>';
     ch += '<td>' + item + '</td>';
-    ch += '<td>' + list_comp[item].type + '</td>';
+    ch += '<td>' + list_item['surfacetype'][list_comp[item].type] + '</td>';
     ch += '<td>' + list_comp[item].os + '</td>';
     ch += '<td>' + list_comp[item].cpu + '</td>';
     ch += '<td>' + list_comp[item].mem + '</td>';
