@@ -65,4 +65,35 @@
       "2026-07-16": "セットアップ"
     }
   }
+  ,"surface3b": {
+    "cpu": "Atom x7-Z8700 1.60GHz",
+    "mem": "4",
+    "ssd": "64",
+    "type": "n3",
+    "id": "055877352652",
+    "os": "Win11 Pro",
+    "account": "mtg",
+    "setup": "mtg",
+    "hardware": [
+      "miniDP-NG"
+    ],
+    "software": [],
+    "comments": {}
+  }
+  ,"surface7a": {
+    "cpu": "Core i5-10354G5 1.10GHz",
+    "mem": "8",
+    "ssd": "128",
+    "type": "p7",
+    "id": "048276103153",
+    "os": "Win11 Pro",
+    "account": "meeting",
+    "setup": "mtg",
+    "hardware": [],
+    "software": [
+      "O365"
+    ],
+    "comments": {
+    }
+  }
 }
