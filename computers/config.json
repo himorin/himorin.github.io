@@ -48,4 +48,21 @@
       "2026-06-17": "画面側カメラ動作不良"
     }
   }
+  ,"surfacep3a": {
+    "cpu": "Core i5-4300U 1.90GHz",
+    "mem": "8",
+    "ssd": "256",
+    "type": "p3",
+    "id": "016508150353",
+    "os": "Win10 Pro",
+    "account": "atsushi",
+    "setup": "none",
+    "hardware": [
+      "NoFilter"
+    ],
+    "software": [],
+    "comments": {
+      "2026-07-16": "セットアップ"
+    }
+  }
 }
