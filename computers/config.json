@@ -96,4 +96,20 @@
     "comments": {
     }
   }
+  ,"surface4a": {
+    "cpu": "Core i5-6300U 2.4GHz",
+    "mem": "4",
+    "ssd": "128",
+    "type": "p4",
+    "id": "033762755053",
+    "os": "Win10 Pro",
+    "account": "atsushi",
+    "setup": "mtg",
+    "hardware": [],
+    "software": [
+      "Off2016"
+    ],
+    "comments": {
+    }
+  }
 }
