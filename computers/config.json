@@ -112,4 +112,91 @@
     "comments": {
     }
   }
+  ,"surfacego1b": {
+    "cpu": "Pen 4415Y 1.60GHz",
+    "mem": "4",
+    "ssd": "64",
+    "type": "go1",
+    "id": "018253293951",
+    "os": "none",
+    "account": "none",
+    "setup": "none",
+    "hardware": [
+      "NoFilter"
+    ],
+    "software": [],
+    "comments": {
+    }
+  }
+  , "surfacego1a": {
+    "cpu": "Pen 4415Y 1.60GHz",
+    "mem": "8",
+    "ssd": "128",
+    "type": "go1",
+    "id": "010100593551",
+    "os": "Win11 Pro",
+    "account": "atsushi",
+    "setup": "mtg",
+    "hardware": [
+    ],
+    "software": [],
+    "comments": {
+    }
+  }
+  , "surface5a": {
+    "cpu": "Core i5-7300U 2.60GHz",
+    "mem": "8",
+    "ssd": "256",
+    "type": "p5",
+    "id": "045968390553",
+    "os":"Win10 Pro",
+    "account": "mtg",
+    "setup": "mtg",
+    "hardware": [
+      "Cracked",
+      "SIM"
+    ],
+    "software": [],
+    "comments": {
+    }
+  }
+  , "surface7c": {
+    "cpu": "Core i5-1135G7 2.40GHz",
+    "mem": "8",
+    "ssd": "256",
+    "type": "p7+",
+    "id": "046602313553",
+    "os": "Win11 Pro",
+    "account": "atsushi",
+    "setup": "norm",
+    "hardware": [
+      "SIM"
+    ],
+    "software": [
+      "O365",
+      "AdobeCC"
+    ],
+    "comments": {
+      "2026-07-21": "画面左下微妙に曲がり"
+    }
+  }
+  , "surface5b": {
+    "cpu": "Core i5-7300U 2.60GHz",
+    "mem": "4",
+    "ssd": "128",
+    "type": "p5",
+    "id": "007259502053",
+    "os":"Win11 Pro",
+    "account": "none",
+    "setup": "mtg",
+    "hardware": [
+      "Broken",
+      "SIM"
+    ],
+    "software": [],
+    "comments": {
+      "2026-07-21": "画面全面割れ",
+      "2026-07-22": "修復ディスク作成失敗"
+    }
+  }
 }
