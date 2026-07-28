@@ -4,6 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>himorin's overview</title>
+  <script>
+<!--
+const lang = [ 'ja', 'en' ];
+let curlang = 'ja';
+function switchLang(tgt) {
+  if (lang.includes(tgt)) {
+    document.querySelectorAll('p:lang(' + curlang + ')').forEach(el => { el.style.display = 'none'; });
+    document.querySelectorAll('p:lang(' + tgt + ')').forEach(el => { el.style.display = 'block'; });
+    curlang = tgt;
+  }
+}
+window.addEventListener('DOMContentLoaded', (event) => {
+  if (navigator.language != curlang) { 
+    if (lang.includes(navigator.language)) { switchLang(navigator.language); }
+    else { switchLang('en'); }
+  }
+});
+-->
+  </script>
   <style type="text/css">
 <!--
 .box {
@@ -34,6 +53,9 @@ img.qr {
   display: table;
   clear: both;
 }
+p:lang(en) {
+  display: none;
+}
 @media (min-width: 700px) {
   div.boxes {
     display: flex;
@@ -62,9 +84,13 @@ img.qr {
 </head>
 <body>
 <h1>himorin (Atsushi Shimono)</h1>
-<p>
+<p lang="ja">
   himorinというnicknameでいろいろな方面で活動しています。
   大体のところはウェブ検索したら活動が出てくるのではないかといわれてます。
+</p>
+<p lang="en">
+  I'm active in various fields using nickname as himorin.
+  For in Japanese, you could check my activities by searching the Web using nickname.
 </p>
 <div class="boxes">
   <div class="box">
@@ -73,21 +99,29 @@ img.qr {
       <a href="https://www.facebook.com/himorin.cosplayer">Facebook (page)</a>
     </h2>
     <div>
-      <p>
+      <p lang="ja">
         コスプレイヤーとしてのFacebook pageです。よければぜひフォローください。<br>
         ページへのメッセージでのやり取りも可能です。
+      </p>
+      <p lang="en">
+        This is my Facebook page as a cosplayer. Please follow the page if you can.
+        Feel free to contact me via message on the page.
       </p>
     </div>
   </div>
   <div class="box">
     <img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABLAQMAAAACgOipAAAABlBMVEUQZPv///+b2t1tAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABEklEQVQokYXTTU4EIRAF4MKOYeGCG8hFjHgcbwE3kyPMxj1HYEkMUtYP3Tg9Y+zVl9dkGh41gPtT4E9e4GnnG5io7ADglZXolJn4qExEIxzAT2C2Mx2zCO3ixkxCs8hvxyKqIBbok4EWLLZJv+gK1NvUFpjfXQts1vSZVibla4KQtwJ0yJhpU5pG3omm2OxgUopDmeksGDoYJtVBvUlqiU1TZmUmbpEOJguUsiAgFyup/45ETWukXuRr8eKoDEkxOWpAUgQzaaifL2FlvuiJTdkP33jzyjvtuKsm+y2vW9/5697ivds0p5uvZ3pmX9RNxJXikerIdf2Bg+Hgg85vM+88szKTG37OAR9+zfrHv3+GyR9mk1gMOuh4FQAAAABJRU5ErkJggg==">
     <h2>
-      <a href="https://m.me/1799679956?hash=Abb8TTv3AZb4_dXa">Facebookメッセンジャー</a>
+      <a href="https://m.me/1799679956?hash=Abb8TTv3AZb4_dXa">Facebook messanger</a>
     </h2>
     <div>
-      <p>
+      <p lang="ja">
         個人Facebookアカウントのメッセンジャーのリンクです。<br>
         メインのメッセージやり取りとして利用しています。
+      </p>
+      <p lang="en">
+        This link navigates you to Facebook messanger of my personal account.<br>
+        And is my main method of communication.
       </p>
     </div>
   </div>
@@ -97,8 +131,11 @@ img.qr {
       <a href="https://www.facebook.com/himorin">Facebook</a>
     </h2>
     <div>
-      <p>
+      <p lang="ja">
         個人Facebookアカウントです。
+      </p>
+      <p lang="en">
+        This is my personal Facebook account.
       </p>
     </div>
   </div>
@@ -108,9 +145,11 @@ img.qr {
       <a href="https://x.com/himorin">X</a>
     </h2>
     <div>
-      <p>
+      <p lang="ja">
         Xのタイムラインです。
       </p>
+      <p lang="en">
+        This is my timeline on X.
     </div>
   </div>
   <div class="box">
@@ -119,8 +158,11 @@ img.qr {
       <a href="https://8card.net/virtual_cards/NgIC6Ll3P8O6bIxjk5Rbew_39569337577">eight</a>
     </h2>
     <div>
-      <p>
+      <p lang="ja">
         eightのデジタル名刺です。
+      </p>
+      <p lang="en">
+        You can check my digital business card on Eight, which is widely used in Japan.
       </p>
     </div>
   </div>
@@ -130,8 +172,11 @@ img.qr {
       <a href="https://www.linkedin.com/in/himorin/">LinkedIn</a>
     </h2>
     <div>
-      <p>
+      <p lang="ja">
         LinkedInのプロフィールです。
+      </p>
+      <p lang="en">
+        My LinkedIn profile, welcomes to connect for business use.
       </p>
     </div>
   </div>
@@ -141,9 +186,13 @@ img.qr {
       <a href="https://signal.me/#eu/mcajoy_Jp9SYVdlHdEFrrkmmE0a4jztzhIisqNXiydtF0G1MrSdMn4Gc0iQx8JdI">Signal</a>
     </h2>
     <div>
-      <p>
+      <p lang="ja">
         <a href="https://signal.org/">Signal</a>のチャットアカウントです。<br>
         スマホとPCの両方に入れていますので、比較的コンタクト取れやすいです。
+      </p>
+      <p lang="en">
+        Chat account at <a href="https://signal.org/">Signal</a>.<br>
+        This is available on both smartphone and PC for my normal working environment, so somehow frequently checked.
       </p>
     </div>
   </div>
@@ -154,9 +203,13 @@ img.qr {
     </h2>
     <div>
       <img class="qr" src="data:image/png;base64,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">
-      <p>
+      <p lang="ja">
         WeChatアカウントです。<br>
         リンクからアプリに飛ばないことがありますので、左側のQRコードをWeChatでスキャンしてください。
+      </p>
+      <p lang="en">
+        My WeChat account.<br>
+        Please scan left QR code, instead of clicking the link which may not work.
       </p>
     </div>
   </div>
@@ -166,8 +219,11 @@ img.qr {
       <a href="https://line.me/ti/p/BCyZx7yrGN">LINE</a>
     </h2>
     <div>
-      <p>
+      <p lang="ja">
         LINEアカウントです。が、PCにアプリを入れてない（ログインが煩雑すぎる＆ログイン周りのバグで消した）ので数か月単位で開かないのでご了解ください。
+      </p>
+      <p lang="en">
+        My personal LINE account, but I don't install LINE app on PC. So, any message may be kept left over monthes.
       </p>
     </div>
   </div>
@@ -177,9 +233,12 @@ img.qr {
       <a href="https://www.instagram.com/atsushi_himor.in">Instagram</a>
     </h2>
     <div>
-      <p>
+      <p lang="ja">
         Instagramアカウントです。<br>
         ポスト内容は基本的に個人Facebookと同じです。
+      </p>
+      <p lang="en">
+        Instagram account, whose posts are mostly the same as my personal Facebook.
       </p>
     </div>
   </div>
@@ -189,9 +248,12 @@ img.qr {
       <a href="https://www.threads.com/@atsushi_himor.in">Threads</a>
     </h2>
     <div>
-      <p>
+      <p lang="ja">
         Threadsアカウントです。
         ポスト内容は基本的に個人Facebookと同じです。
+      </p>
+      <p lang="en">
+        My Threads account, whose posts are mostly the same as my personal Facebook.
       </p>
     </div>
   </div>
@@ -201,9 +263,12 @@ img.qr {
       <a href="https://www.youtube.com/@himorin">YouTube</a>
     </h2>
     <div>
-      <p>
+      <p lang="ja">
         YouTubeチャンネルです。が、ほとんどアップロードしてません。<br>
         イベントトークの録画などもアップしています。
+      </p>
+      <p lang="en">
+        My YouTube channel, which I sometimes upload videos such as recordings of event talks.
       </p>
     </div>
   </div>
