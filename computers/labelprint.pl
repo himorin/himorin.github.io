@@ -7,7 +7,7 @@ use SatoLabel;
 use JSON;
 
 use constant ITEMS => 'items.json';
-use constant URLHEAD => 'https://himor.in/computers/?';
+use constant URLHEAD => 'https://himorin.asia/computers/?';
 
 my $o_spl = new SatoLabel;
 my $conf = $ARGV[0] || "config.json";
