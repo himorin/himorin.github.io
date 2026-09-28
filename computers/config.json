@@ -201,4 +201,19 @@
       "2026-07-22": "修復ディスク作成失敗"
     }
   }
+  , "surface7d": {
+    "cpu": "Core i3-1115G4 3.00GHz",
+    "mem": "8",
+    "ssd": "128",
+    "type": "p7+",
+    "id": "006428110953",
+    "os": "Win11 Pro",
+    "account": "mtg",
+    "setup": "mtg","
+    "hardwware": [
+      "broken"
+    ],
+    "software": []
+    "comments": {}
+  }
 }
