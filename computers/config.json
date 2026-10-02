@@ -165,21 +165,22 @@
   , "surface7c": {
     "cpu": "Core i5-1135G7 2.40GHz",
     "mem": "8",
-    "ssd": "256",
+    "ssd": "128",
     "type": "p7+",
     "id": "046602313553",
     "os": "Win11 Pro",
-    "account": "atsushi",
-    "setup": "norm",
+    "account": "mtg",
+    "setup": "mtg",
     "hardware": [
       "SIM"
     ],
     "software": [
-      "O365",
-      "AdobeCC"
+      "O365"
     ],
     "comments": {
-      "2026-07-21": "画面左下微妙に曲がり"
+      "2026-07-21": "画面左下微妙に曲がり",
+      "2026-10-02": "LTE動作確認 - rakuten",
+      "2026-10-03": "SSD入れ替え、Win11セットアップ"
     }
   }
   , "surface5b": {
@@ -204,16 +205,22 @@
   , "surface7d": {
     "cpu": "Core i3-1115G4 3.00GHz",
     "mem": "8",
-    "ssd": "128",
+    "ssd": "256",
     "type": "p7+",
     "id": "006428110953",
     "os": "Win11 Pro",
-    "account": "mtg",
-    "setup": "mtg",
+    "account": "atsushi",
+    "setup": "mtg+",
     "hardwware": [
-      "broken"
+      "LCDcrack",
+      "notouch"
     ],
-    "software": [],
-    "comments": {}
+    "software": [
+      "O365",
+      "AdobeCC"
+    ],
+    "comments": {
+      "2026-10-02": "SSD入替(移行)、AdobeCCマシン化"
+    }
   }
 }
