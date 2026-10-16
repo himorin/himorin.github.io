@@ -223,4 +223,19 @@
       "2026-10-02": "SSD入替(移行)、AdobeCCマシン化"
     }
   }
+  , "surface5c": {
+    "cpu": "Core m3-7Y30 1.00GHz",
+    "mem": "4",
+    "ssd": "128",
+    "type": "p5",
+    "id": "031736171953",
+    "os": "Win10",
+    "account": "mtg",
+    "setup": "none",
+    "hardware": [],
+    "software": [],
+    "comments": {
+      "2026-10-15": "セットアップ、Win11化実験用"
+    }
+  }
 }
