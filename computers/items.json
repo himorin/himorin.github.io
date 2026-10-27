@@ -8,8 +8,35 @@
     "p7": "Surface Pro 7",
     "p7+": "Surface Pro 7+",
     "p8": "Surface Pro 8",
-    "go": "Surface Go",
+    "go1": "Surface Go",
     "go2": "Surface Go 2",
     "go3": "Surface Go 3"
+  },
+  "details_list": {
+    "cpu": "CPU型番・クロック",
+    "mem": "メモリ容量 (GB)",
+    "ssd": "SSD容量 (GB)",
+    "type": "機種",
+    "id": "機番",
+    "os": "OS",
+    "account": "アカウント設定",
+    "setup": "システムセットアップ",
+    "hardware": "ハードウェア状態",
+    "software": "搭載ソフトウェア"
+  },
+  "details_hardware": {
+    "NoFilter": "画面保護フィルターなし",
+    "HardFilter": "硬質の画面保護フィルター付き",
+    "miniDP-NG": "miniDP 出力しない",
+    "Cracked": "画面クラックあり",
+    "SIM": "SIMカードスロットあり",
+    "Broken": "画面破損",
+    "notouch": "タッチパネル機能しない",
+    "batteryNG": "バッテリ稼働しない (電源接続必須・抜けたら落ちる)"
+  },
+  "details_software": {
+    "O365": "Office 365",
+    "AdobeCC": "Adobe Creative Cloud",
+    "Off2016": "Office 2016 (ローカル版)"
   }
 }

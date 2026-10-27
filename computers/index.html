@@ -11,13 +11,40 @@ table {
   border: 0px;
 }
 table tr {
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
 }
 table, th, td {
   border: 1px solid #000000;
   border-collapse: collapse;
-  padding-left: 0.5em;
+  padding-left: 1em;
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+div#details {
+  display: none;
+  position: absolute;
+  width: 90vw;
+  height: 90vh;
+  top: 50%;
+  left: 50%;
+  margin: -45vh 0 0 -45vw;
+  background-color: rgb(240 240 240 / 0.95);
+}
+div#details_close {
+  position: absolute;
+  top: 3vh;
+  left: calc(90vw - 5em);
+  font-size: 1.5rem;
+}
+div#details_name {
+  width: 100%;
+  margin-top: 7vh;
+  text-align: center;
+  font-size: 2.5rem;
+}
+div#details_box {
+  margin-top: 2em;
 }
   </style>
   <script>
@@ -38,7 +65,7 @@ async function LoadList() {
 };
 function InsertRows() {
   let tgt = document.getElementById('list_computers');
-  Object.keys(list_comp).forEach((item) => {
+  Object.keys(list_comp).sort().forEach((item) => {
     let ch = '<tr>';
     ch += '<td>' + item + '</td>';
     ch += '<td>' + list_item['surfacetype'][list_comp[item].type] + '</td>';
@@ -55,6 +82,9 @@ function InsertRows() {
   Object.keys(list_comp).forEach((item) => {
     document.getElementById('detail_' + item).addEventListener('click', ShowDetails);
   });
+  document.getElementById('details_close').addEventListener('click', function() {
+    document.getElementById('details').style.display = 'none';
+  });
 }
 function ShowItems() {
   LoadList()
@@ -62,10 +92,47 @@ function ShowItems() {
     list_comp = data[0];
     list_item = data[1];
     InsertRows();
+    if (window.location.hash != '') {
+      let id = window.location.hash.replace('#', '');
+      if (id in list_comp) { document.getElementById('detail_' + id).click(); }
+    }
   }).catch((err) => { console.log('Load failed: ' + err.message)});
 }
 
-function ShowDetails() {
+function ShowDetails(event) {
+  let id = event.target.id.replace('detail_', '');
+  document.getElementById('details_name_text').innerText = id;
+  document.getElementById('details').style.display = 'block';
+  document.getElementById('details_box_list').innerHTML = '';
+  document.getElementById('details_box_history').innerHTML = '';
+  Object.keys(list_item['details_list']).forEach((item) => {
+    if (!(item in list_comp[id])) { return; }
+    let ch = '<tr>';
+    let dlen = 0;
+    if ((item == 'hardware') || (item == 'software')) {
+      let carr = list_comp[id][item];
+      dlen = carr.length;
+      ch += '<td rowspan="' + (dlen < 1 ? 1 : dlen) + '">' + list_item['details_list'][item] + '</td>';
+      if (dlen == 0) { ch += '<td></td>'; }
+      else {
+        ch += '<td>' + (carr[0] in list_item['details_' + item] ? list_item['details_' + item][carr[0]] : carr[0]) + '</td>';
+        carr.shift();
+        carr.forEach((citem) => { ch += '</tr><tr><td>' + (citem in list_item['details_' + item] ? list_item['details_' + item][citem] : citem) + '</td>'; });
+      }
+    } else {
+      ch += '<td>' + list_item['details_list'][item] + '</td>';
+      ch += '<td>' + list_comp[id][item] + '</td>';
+    }
+    ch += '</tr>';
+    document.getElementById('details_box_list').innerHTML += ch;
+  })
+  Object.keys(list_comp[id]['comments']).sort().reverse().forEach((item) => {
+    let ch = '<tr>';
+    ch += '<td>' + item + '</td>';
+    ch += '<td>' + list_comp[id]['comments'][item] + '</td>';
+    ch += '</tr>';
+    document.getElementById('details_box_history').innerHTML += ch;
+  })
 }
 
 window.addEventListener('DOMContentLoaded', function() {
@@ -83,5 +150,24 @@ window.addEventListener('DOMContentLoaded', function() {
 </thead>
 <tbody id="list_computers"></tbody>
 </table>
+<div id="details">
+  <div id="details_close">CLOSE</div>
+  <div id="details_name"><span id="details_name_text"></span></div>
+  <div id="details_box">
+    <table>
+      <thead>
+        <tr>
+          <th>category</th>
+          <th>value</th>
+        </tr>
+      </thead>
+      <tbody id="details_box_list"></tbody>
+      <tr>
+        <th colspan="2">更新履歴</th>
+      </tr>
+      <tbody id="details_box_history"></tbody>
+    </table>
+  </div>
+</div>
 </body>
 </html>
