@@ -92,9 +92,14 @@ function ShowItems() {
     list_comp = data[0];
     list_item = data[1];
     InsertRows();
+    let tgt = '';
     if (window.location.hash != '') {
-      let id = window.location.hash.replace('#', '');
-      if (id in list_comp) { document.getElementById('detail_' + id).click(); }
+      tgt = window.location.hash.replace('#', '');
+    } else if (window.location.search != '') {
+      tgt = window.location.search.replace('?', '');
+    }
+    if (tgt != '') {
+      if (tgt in list_comp) { document.getElementById('detail_' + tgt).click(); }
     }
   }).catch((err) => { console.log('Load failed: ' + err.message)});
 }
